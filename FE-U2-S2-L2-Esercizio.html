@@ -159,8 +159,19 @@ EXTRAS
       </div>
     </header>
     <section class="container">
-      <h2 id="saldi" class="mt-5">Saldi</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+      <h2 id="saldi" class="mt-5 d-flex justify-content-between">
+        Saldi<button
+          class="btn btn-link link-underline link-underline-opacity-0 text-info fs-6"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Nascondi sezione
+        </button>
+      </h2>
+      <div id="collapseExample" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 collapse show">
         <div class="col">
           <div class="card border-2 border-info">
             <img src="./assets/mare-sardegna.jpg" class="card-img-top" alt="..." />
@@ -202,8 +213,20 @@ EXTRAS
           </div>
         </div>
       </div>
-      <h2 id="welcome" class="mt-5">Welcome Summer</h2>
-      <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6">
+      <h2 id="welcome" class="mt-5 d-flex justify-content-between">
+        Welcome Summer
+        <button
+          class="btn btn-link link-underline link-underline-opacity-0 text-info fs-6"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse2"
+          aria-expanded="false"
+          aria-controls="collapse2"
+        >
+          Nascondi sezione
+        </button>
+      </h2>
+      <div id="collapse2" class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 collapse show">
         <div class="col">
           <div class="card shadow-lg mb-5 bg-body-tertiary rounded">
             <img src="./assets/mare-sardegna.jpg" class="card-img-top" alt="..." />
