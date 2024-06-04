@@ -126,7 +126,7 @@ EXTRAS
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Saldi </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sardegna</a></li>
+                <li><a class="dropdown-item" href="#saldi">Sardegna</a></li>
                 <li><a class="dropdown-item" href="#">Sicilia</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="#">America</a></li>
@@ -159,7 +159,7 @@ EXTRAS
       </div>
     </header>
     <section class="container">
-      <h2 class="mt-5">Saldi</h2>
+      <h2 id="saldi" class="mt-5">Saldi</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
         <div class="col">
           <div class="card border-2 border-info">
@@ -268,7 +268,7 @@ EXTRAS
       <h2 class="mt-5 d-none d-sm-block">Offerta del giorno</h2>
       <div class="row d-none d-sm-flex">
         <div class="col-8">
-          <img class="rounded-3" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
+          <img class="rounded-3 shadow-sm mb-5 bg-body-tertiary rounded" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
         </div>
         <div class="col-4">
           <h2>La Maddalena</h2>
@@ -280,22 +280,22 @@ EXTRAS
       <h2 id="lastMinute" class="mt-5">Last Minute</h2>
       <div class="row g-3">
         <div class="col-6 col-md-4 col-lg-2">
-          <img class="rounded-3" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
+          <img class="rounded-3 shadow-lg mb-5 bg-body-tertiary rounded" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
         </div>
         <div class="col-6 col-md-4 col-lg-2">
-          <img class="rounded-3" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
+          <img class="rounded-3 shadow-lg mb-5 bg-body-tertiary rounded" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
         </div>
         <div class="col-6 col-md-4 col-lg-2">
-          <img class="rounded-3" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
+          <img class="rounded-3 shadow-lg mb-5 bg-body-tertiary rounded" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
         </div>
         <div class="col-6 col-md-4 col-lg-2">
-          <img class="rounded-3" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
+          <img class="rounded-3 shadow-lg mb-5 bg-body-tertiary rounded" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
         </div>
         <div class="col-6 col-md-4 col-lg-2">
-          <img class="rounded-3" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
+          <img class="rounded-3 shadow-lg mb-5 bg-body-tertiary rounded" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
         </div>
         <div class="col-6 col-md-4 col-lg-2">
-          <img class="rounded-3" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
+          <img class="rounded-3 shadow-lg mb-5 bg-body-tertiary rounded" src="./assets/mare-sardegna.jpg" alt="Mare" width="100%" />
         </div>
       </div>
       <h2 id="recensioni" class="mt-5 text-center">Recensioni</h2>
@@ -343,6 +343,41 @@ EXTRAS
         </div>
       </div>
     </section>
+    <footer class="bg-black">
+      <div class="container text-center p-5">
+        <button type="button" class="btn btn-black text-success-emphasis border border-succes-emphasis px-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+          Contattaci
+        </button>
+        <p class="p-3 text-white">&copy;2021 Kalina Travel LTD. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
